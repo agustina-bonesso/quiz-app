@@ -1,0 +1,12 @@
+@import "global.css";
+@import "./components/card.css";
+
+:root{
+    --global-primary-color:rgb(55, 103, 181);
+    --global-secondary-color: rgb(209, 212, 209);
+    --global-third-color: rgb(234, 228, 228) ;
+    --global-headline-color: rgba(83, 84, 85, 0.885);
+    --global-button-color: rgb(239, 235, 235);
+    --global-selection-color: rgb(226, 94, 94);
+}
+
