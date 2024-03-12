@@ -32,13 +32,13 @@ form.addEventListener("submit", (event) => {
 
   const bookmarkButton = document.createElement("button");
   bookmarkButton.classList.add("bookmark__button");
-  const bookmarkIcon = document.createElement("i");
-  bookmarkIcon.classList.add("fa-solid,fa-bookmark");
+  const bookmarkIcon = document.createElement("iclass");
+  bookmarkIcon.classList.add("fa-bookmark", "fa-solid");
   bookmarkButton.append(bookmarkIcon);
   sectionCard.append(bookmarkButton);
 
   const showAnswerButton = document.createElement("button");
-  showAnswerButton.classList.add("show-answer__button,front-button");
+  showAnswerButton.classList.add("show-answer__button", "front-button");
   showAnswerButton.textContent = "Show";
   sectionCard.append(showAnswerButton);
 
@@ -52,13 +52,11 @@ form.addEventListener("submit", (event) => {
   const tagList = document.createElement("ul");
   tagList.classList.add("tag-list");
   const tag = document.createElement("li");
-  tag.classList.add("tag,front-button");
+  tag.classList.add("tag", "front-button");
   sectionCard.append(tagList);
   tagList.append(tag);
   tag.textContent = inputTag;
 
   document.body.append(sectionCard);
 });
-
-
 
