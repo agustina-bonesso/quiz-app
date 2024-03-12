@@ -1,5 +1,6 @@
 @import "global.css";
 @import "./components/card.css";
+@import "./components/form.css";
 
 :root{
     --global-primary-color:rgb(55, 103, 181);

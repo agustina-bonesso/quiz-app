@@ -1,0 +1,14 @@
+form {
+    margin: 7% 5%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2vh;
+}
+.submit-button{
+    box-sizing: border-box;
+    height: 5vh;
+    width: 25vw;
+    align-self: center;
+    margin-top: 5vh;
+}

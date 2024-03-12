@@ -1,7 +1,25 @@
 const showAnswerButton = document.querySelector('[data-js="show-answer"]');
-const outputSection = document.querySelector('[data-js="output-section"]');
+const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
-showAnswerButton.addEventListener("click", () => {
+bookmarkButton.addEventListener("click", handleBookmarkClick);
 
-    outputSection.textContent = "Here the answer";
+function handleBookmarkClick(event) {
+  const buttonElement = event.target;
+  buttonElement.classList.toggle("bookmark__button--click");
+}
+
+
+showAnswerButton.addEventListener("click", (event) => {
+  const buttonElement = event.target;
+  const answerContainer = document.querySelector(".answer-container");
+
+  answerContainer.classList.toggle("answer-container--show");
+  if (buttonElement.textContent === "Show") {
+    buttonElement.textContent = "Hide";
+  } else {
+    buttonElement.textContent = "Show";
+  }
 });
+
+
+

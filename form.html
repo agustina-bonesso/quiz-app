@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./form.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/3cbe2cb22b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz-App</h1>
+    </header>
+    <main>
+      <form data-js="form">
+        <label for="question">Your Question:</label>
+        <textarea name="question" id="question" rows="6" data-js="textInput"></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters">150</span> characters left
+        </p>
+
+        <label for="answer">Your Answer:</label>
+        <textarea name="answer" id="answer" rows="6" data-js="textInput"></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters">150</span> characters left
+        </p>
+
+        <label for="tag">Tag</label>
+        <input type="text" name="tag" id="tag" />
+        <button type="submit" class="submit-button front-button">Submit</button>
+      </form>
+
+    </main>
+    <footer>
+      <nav>
+        <div class="icon-bar">
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          <a href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="form.html"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

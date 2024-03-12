@@ -1,53 +1,67 @@
-.card{
-    margin: 40px 10%;
+.card {
+  margin: 40px 10%;
+  border-radius: 4vw;
+  background-color: var(--global-secondary-color);
+  padding: 3% 10%;
+  /* scroll-margin-top: 100px;  */
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card > h3 {
+  color: rgb(85, 81, 81);
+  text-align: center;
+}
+
+.bookmark__button {
+  color: var(--global-primary-color);
+  font-size: 7vh;
+  position: absolute;
+  left: 72vw;
+  top: 0vh;
+}
+.bookmark__button--click {
+  color: var(--global-selection-color);
+}
+
+li {
+  list-style: none;
+  background-color: var(--global-button-color);
+  /* width: 100%; */
+  border: solid;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+.tag-list {
+  display: flex;
+  gap: 1vw;
+  position: absolute;
+  top: 33vh;
+  left: 3vw;
+}
+.front-button {
+  background-color: var(--global-button-color);
+  border-radius: 1vw;
+}
+.front-button:hover {
+  background-color: var(--global-selection-color);
+}
+.show-answer__button {
+  box-sizing: border-box;
+  height: 5vh;
+  width: 25vw;
+  align-self: center;
+  margin-top: 5vh;
+}
+.answer-container{
+    background-color: var(--global-button-color);
     border-radius: 4vw;
-    background-color: var(--global-secondary-color);
-    padding: 3% 10%;
-    /* scroll-margin-top: 100px;  */
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;    
+    margin: 5% 10%;
+    padding: 5% 10%;
+    display: none;
 }
-
-.card > h3{
-    color: rgb(85, 81, 81);
-    text-align: center;
-}
-
-.card-bookmark {
-    font-size: 7vh;
-    position: absolute;
-    left: 72vw;
-    top: 0vh;
-  }
-
-li{
-    list-style:none;
-    background-color: var(--global-button-color);
-    /* width: 100%; */
-    border: solid;
-    border-radius: .25rem;
-    padding: .25rem
-}
-.tag-list{
-    display: flex;
-    gap: 1vw;
-    position: absolute;
-    top: 27vh;
-    left: 3vw;    
-}
-.front-button{
-    background-color: var(--global-button-color);
-    border-radius: 1vw;
-}
-.front-button:hover{
-    background-color: var(--global-selection-color);
-}
-.show-answer-button{
-    box-sizing: border-box;
-    height: 5vh;
-    width: 25vw;
-    align-self: center;
-    margin-top: 5vh;
+.answer-container--show{
+ display: block;
 }
